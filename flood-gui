@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.github.com/tomatotxt/Flood-GUI/testing/loader.lua"))("testing")
