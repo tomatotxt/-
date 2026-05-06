@@ -8,8 +8,8 @@
 ]]
 
 getgenv().TAS_Active = true
-getgenv().TAS_AutoFarm = false  -- Set to false to skip autofarm; buttons will be ordered dynamically as you touch them
-
+getgenv().TAS_AutoFarm = (...) or false  -- Set to false to skip autofarm; buttons will be ordered dynamically as you touch them
+print(TAS_AutoFarm)
 local UI_API_URL = "https://raw.githubusercontent.com/tomatotxt/Flood-GUI/refs/heads/testing/TAS/CREATOR/uiapi.luau"
 
 print("TAS Creator: Mobile Edition Loaded")
