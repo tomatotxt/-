@@ -1,4 +1,3 @@
-
 -- ==============================================================================
 -- [AUTHORSHIP INTEGRITY & PROTECTION] (Creator: tomatotxt on discord)
 -- ==============================================================================
@@ -88,6 +87,18 @@ local SurvivedRemote = RemoteFolder:FindFirstChild("Survived") or RemoteFolder:W
 local ReqRebirth = RemoteFolder:FindFirstChild("ReqRebirth")
 local ReqPassKey = RemoteFolder:FindFirstChild("ReqPassKey", true) -- Recursive, no WaitForChild
 
+-- Dynamic Cache: Get the static server-wide passkey once on execution
+local ServerPasskey = nil
+task.spawn(function()
+    if ReqPassKey then
+        local success, key = pcall(function() return ReqPassKey:InvokeServer() end)
+        if success and key then
+            ServerPasskey = -key
+            print("[TOMATOTXT] Session Server Passkey cached: " .. tostring(ServerPasskey))
+        end
+    end
+end)
+
 -- Anti-AFK
 TrackConnection(LocalPlayer.Idled:Connect(function()
     VirtualUser:CaptureController()
@@ -161,7 +172,7 @@ end
 -- Set UI defaults safely
 pcall(function()
     if ResetToggle and ResetToggle.SetState then
-        ResetToggle:SetState(true)
+        ResetToggle:SetState(false) -- Default false
     end
 end)
 
@@ -404,7 +415,6 @@ local function OnMapLoad(Map)
     NextGoal = nil
     Escaped = false
     local alternate = false
-    local fetchedPasskey = nil -- Prevents yielding loop inside Heartbeat
     
     -- Safety timers for softlocks
     local escapeTimer = nil
@@ -589,17 +599,17 @@ local function OnMapLoad(Map)
                         pcall(debug_setupvalue, CachedUpdGameState, idx, false)
                     end
                     
-                    -- Fetch the passkey ONCE to prevent Heartbeat lag/spam
-                    if not fetchedPasskey and ReqPassKey then
+                    -- Use the globally cached static passkey (if missing, fetch once as fallback)
+                    if not ServerPasskey and ReqPassKey then
                         local success, key = pcall(function() return ReqPassKey:InvokeServer() end)
                         if success and key then
-                            fetchedPasskey = -key
+                            ServerPasskey = -key
                         end
                     end
 
                     -- Fire the escape remote
-                    if fetchedPasskey then
-                        SurvivedRemote:FireServer(fetchedPasskey, 100)
+                    if ServerPasskey then
+                        SurvivedRemote:FireServer(ServerPasskey, 100)
                     end
                 end
                 
@@ -622,16 +632,34 @@ local function OnMapLoad(Map)
         end
         Alert("Escaped successfully! (Credit: tomatotxt on discord)", "Success")
         
-        -- Auto Rebirth logic with clear status alerts
+        -- Auto Rebirth logic (Using cached server-wide static passkey + dynamic fallback)
         if UI_State.AutoRebirth then
-            if fetchedPasskey and ReqRebirth then
+            if ReqRebirth then
                 Alert("Attempting Auto Rebirth...", "Info")
-                pcall(function()
-                    ReqRebirth:FireServer(fetchedPasskey)
-                    Alert("Auto Rebirth request sent successfully!", "Success")
-                end)
+                
+                if ServerPasskey then
+                    pcall(function()
+                        ReqRebirth:FireServer(ServerPasskey)
+                        Alert("Auto Rebirth request sent successfully!", "Success")
+                    end)
+                else
+                    -- Fallback: Fetch passkey on demand if initial startup check was delayed
+                    local success, key = pcall(function()
+                        return -ReqPassKey:InvokeServer()
+                    end)
+                    
+                    if success and key then
+                        ServerPasskey = key
+                        pcall(function()
+                            ReqRebirth:FireServer(ServerPasskey)
+                            Alert("Auto Rebirth request sent successfully!", "Success")
+                        end)
+                    else
+                        Alert("Failed to attempt Auto Rebirth: Could not retrieve passkey.", "Error")
+                    end
+                end
             else
-                Alert("Failed to attempt Auto Rebirth: Missing passkey or remote.", "Warning")
+                Alert("Failed to attempt Auto Rebirth: Rebirth Remote missing.", "Warning")
             end
         end
         
