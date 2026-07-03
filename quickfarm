@@ -11,10 +11,10 @@ local UI_State = {
     NoclipActive = true,
     GodModeActive = true,
     AlertsEnabled = true,
-    TargetDifficulty = "Normal",
+    TargetDifficulty = "Crazy+",
     EnforceDifficulty = false,
     AutoRebirth = false,
-    ResetAfterEscape = true
+    ResetAfterEscape = false
 }
 
 local ResettingForDifficulty = false
