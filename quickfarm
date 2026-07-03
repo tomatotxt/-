@@ -1,4 +1,20 @@
 -- ==============================================================================
+-- [GLOBAL CONSTANTS & PASSKEY CACHE] (Absolute Top Initialization)
+-- ==============================================================================
+_G.ReqRebirth = nil
+_G.ServerPasskey = nil
+
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RemoteFolder = ReplicatedStorage:WaitForChild("Remote")
+-- Safe, fast polling loop (No WaitForChild) to guarantee replication
+local reqPassKey = RemoteFolder.ReqPasskey
+_G.ReqRebirth = RemoteFolder:FindFirstChild("ReqRebirth", true)
+    
+-- Cache the static server-wide passkey globally once
+_G.ServerPasskey = -reqPassKey:InvokeServer() 
+
+-- ==============================================================================
 -- [AUTHORSHIP INTEGRITY & PROTECTION] (Creator: tomatotxt on discord)
 -- ==============================================================================
 
@@ -11,10 +27,10 @@ local UI_State = {
     NoclipActive = true,
     GodModeActive = true,
     AlertsEnabled = true,
-    TargetDifficulty = "Crazy+",
+    TargetDifficulty = "Crazy+", -- Default Crazy+
     EnforceDifficulty = false,
     AutoRebirth = false,
-    ResetAfterEscape = false
+    ResetAfterEscape = false -- Default false
 }
 
 local ResettingForDifficulty = false
@@ -84,20 +100,6 @@ local AlertRemote = RemoteFolder:WaitForChild("Alert")
 local PressedMapButton = RemoteFolder:FindFirstChild("PressedMapButton") or RemoteFolder:WaitForChild("PressedMapButton")
 local UpdGoalLocator = RemoteFolder:FindFirstChild("UpdGoalLocator") or RemoteFolder:WaitForChild("UpdGoalLocator")
 local SurvivedRemote = RemoteFolder:FindFirstChild("Survived") or RemoteFolder:WaitForChild("Survived")
-local ReqRebirth = RemoteFolder:FindFirstChild("ReqRebirth")
-local ReqPassKey = RemoteFolder:FindFirstChild("ReqPassKey", true) -- Recursive, no WaitForChild
-
--- Dynamic Cache: Get the static server-wide passkey once on execution
-local ServerPasskey = nil
-task.spawn(function()
-    if ReqPassKey then
-        local success, key = pcall(function() return ReqPassKey:InvokeServer() end)
-        if success and key then
-            ServerPasskey = -key
-            print("[TOMATOTXT] Session Server Passkey cached: " .. tostring(ServerPasskey))
-        end
-    end
-end)
 
 -- Anti-AFK
 TrackConnection(LocalPlayer.Idled:Connect(function()
@@ -599,17 +601,9 @@ local function OnMapLoad(Map)
                         pcall(debug_setupvalue, CachedUpdGameState, idx, false)
                     end
                     
-                    -- Use the globally cached static passkey (if missing, fetch once as fallback)
-                    if not ServerPasskey and ReqPassKey then
-                        local success, key = pcall(function() return ReqPassKey:InvokeServer() end)
-                        if success and key then
-                            ServerPasskey = -key
-                        end
-                    end
-
-                    -- Fire the escape remote
-                    if ServerPasskey then
-                        SurvivedRemote:FireServer(ServerPasskey, 100)
+                    -- Fire the escape remote using the globally cached static passkey
+                    if _G.ServerPasskey then
+                        SurvivedRemote:FireServer(_G.ServerPasskey, 100)
                     end
                 end
                 
@@ -632,34 +626,21 @@ local function OnMapLoad(Map)
         end
         Alert("Escaped successfully! (Credit: tomatotxt on discord)", "Success")
         
-        -- Auto Rebirth logic (Using cached server-wide static passkey + dynamic fallback)
+        -- Auto Rebirth logic (Uses globally cached static passkey + static remote constant)
         if UI_State.AutoRebirth then
-            if ReqRebirth then
+            if _G.ReqRebirth then
                 Alert("Attempting Auto Rebirth...", "Info")
                 
-                if ServerPasskey then
+                if _G.ServerPasskey then
                     pcall(function()
-                        ReqRebirth:FireServer(ServerPasskey)
+                        _G.ReqRebirth:FireServer(_G.ServerPasskey)
                         Alert("Auto Rebirth request sent successfully!", "Success")
                     end)
                 else
-                    -- Fallback: Fetch passkey on demand if initial startup check was delayed
-                    local success, key = pcall(function()
-                        return -ReqPassKey:InvokeServer()
-                    end)
-                    
-                    if success and key then
-                        ServerPasskey = key
-                        pcall(function()
-                            ReqRebirth:FireServer(ServerPasskey)
-                            Alert("Auto Rebirth request sent successfully!", "Success")
-                        end)
-                    else
-                        Alert("Failed to attempt Auto Rebirth: Could not retrieve passkey.", "Error")
-                    end
+                    Alert("Failed to attempt Auto Rebirth: Static passkey was not resolved at startup.", "Error")
                 end
             else
-                Alert("Failed to attempt Auto Rebirth: Rebirth Remote missing.", "Warning")
+                Alert("Failed to attempt Auto Rebirth: Global Rebirth Remote missing.", "Warning")
             end
         end
         
