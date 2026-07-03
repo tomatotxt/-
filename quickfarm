@@ -621,12 +621,17 @@ local function OnMapLoad(Map)
         end
         Alert("Escaped successfully! (Credit: tomatotxt on discord)", "Success")
         
-        -- Auto Rebirth logic utilizing the safely fetched passkey
-        if UI_State.AutoRebirth and fetchedPasskey and ReqRebirth then
-            pcall(function()
-                ReqRebirth:FireServer(fetchedPasskey)
-                Alert("Attempted Auto Rebirth", "Success")
-            end)
+        -- Auto Rebirth logic with clear status alerts
+        if UI_State.AutoRebirth then
+            if fetchedPasskey and ReqRebirth then
+                Alert("Attempting Auto Rebirth...", "Info")
+                pcall(function()
+                    ReqRebirth:FireServer(fetchedPasskey)
+                    Alert("Auto Rebirth request sent successfully!", "Success")
+                end)
+            else
+                Alert("Failed to attempt Auto Rebirth: Missing passkey or remote.", "Warning")
+            end
         end
         
         if UI_State.ResetAfterEscape then
