@@ -2,7 +2,7 @@
 local RbxmxParser = {}
 
 -- ==========================================
--- 1. BASE64 & XML DECODING UTILITIES
+-- 1. BASE64 & XML DECODING (NO BIT32)
 -- ==========================================
 
 local B64_LOOKUP = {}
@@ -13,6 +13,16 @@ for i = 1, #B64_CHARS do
 end
 
 local function base64Decode(data: string): string
+	-- Method 1: Try Roblox Native EncodingService if available
+	local ok, decoded = pcall(function()
+		local EncodingService = game:GetService("EncodingService")
+		return buffer.tostring(EncodingService:Base64Decode(buffer.fromstring(data)))
+	end)
+	if ok and decoded then
+		return decoded
+	end
+
+	-- Method 2: Pure Luau Arithmetic Fallback (Zero Bitwise Dependencies)
 	data = string.gsub(data, "[^A-Za-z0-9%+%/%=]", "")
 	local output = {}
 	local length = #data
@@ -23,9 +33,10 @@ local function base64Decode(data: string): string
 		local c3 = B64_LOOKUP[string.sub(data, i + 2, i + 2)] or 0
 		local c4 = B64_LOOKUP[string.sub(data, i + 3, i + 3)] or 0
 
-		local b1 = bit32.or(bit32.lshift(c1, 2), bit32.rshift(c2, 4))
-		local b2 = bit32.or(bit32.lshift(bit32.band(c2, 15), 4), bit32.rshift(c3, 2))
-		local b3 = bit32.or(bit32.lshift(bit32.band(c3, 3), 6), c4)
+		-- Pure arithmetic byte extraction
+		local b1 = (c1 * 4) + math.floor(c2 / 16)
+		local b2 = ((c2 % 16) * 16) + math.floor(c3 / 4)
+		local b3 = ((c3 % 4) * 64) + c4
 
 		table.insert(output, string.char(b1))
 		if string.sub(data, i + 2, i + 2) ~= "=" then
@@ -130,12 +141,13 @@ TypeParsers["Color3"] = function(raw: string)
 	return Color3.new(r, g, b)
 end
 
+-- Pure math Color3uint8 unpacker (No bit32 required)
 TypeParsers["Color3uint8"] = function(raw: string)
 	local packed = tonumber(raw)
 	if packed then
-		local b = bit32.band(packed, 0xFF)
-		local g = bit32.band(bit32.rshift(packed, 8), 0xFF)
-		local r = bit32.band(bit32.rshift(packed, 16), 0xFF)
+		local b = packed % 256
+		local g = math.floor(packed / 256) % 256
+		local r = math.floor(packed / 65536) % 256
 		return Color3.fromRGB(r, g, b)
 	end
 	return Color3.new(0, 0, 0)
@@ -298,7 +310,6 @@ function RbxmxParser.Decode(xmlString: string, options: ParseOptions?): Model
 			end)
 
 			if not ok or not instance then
-				-- Convert PartOperations/Unions or uncreatable classes to Parts/Folders
 				if className == "PartOperation" or className == "UnionOperation" then
 					instance = Instance.new("Part")
 					instance.Name = "UnionOperation"
