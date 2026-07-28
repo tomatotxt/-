@@ -1,0 +1,1177 @@
+[
+  {
+    "MapName": "LostWoods",
+    "TotalButtons": 3,
+    "Ratio": 2
+  },
+  {
+    "MapName": "Axiom",
+    "TotalButtons": 5,
+    "Ratio": 4
+  },
+  {
+    "MapName": "CastleTides",
+    "TotalButtons": 8,
+    "Ratio": 7
+  },
+  {
+    "MapName": "PoisonousValley",
+    "TotalButtons": 6,
+    "Ratio": 5
+  },
+  {
+    "MapName": "MarredDreams",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "BuriedOasis",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "ForsakenEra",
+    "TotalButtons": 6,
+    "Ratio": null
+  },
+  {
+    "MapName": "EeriePeaks",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "PolarIndustry",
+    "TotalButtons": 7,
+    "Ratio": 0.17
+  },
+  {
+    "MapName": "RetroCoast",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "Zemblanity",
+    "TotalButtons": 7,
+    "Ratio": 0.4
+  },
+  {
+    "MapName": "AntiquatedRailways",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "Infiltration",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "CaveSystem",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "FloodIsland",
+    "TotalButtons": 3,
+    "Ratio": 2
+  },
+  {
+    "MapName": "OrientalGrove",
+    "TotalButtons": 8,
+    "Ratio": 7
+  },
+  {
+    "MapName": "SkySanctuary",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "DecrepitSeas",
+    "TotalButtons": 6,
+    "Ratio": 5
+  },
+  {
+    "MapName": "NorthernWorkshop",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "ForgottenTombs",
+    "TotalButtons": 3,
+    "Ratio": 2
+  },
+  {
+    "MapName": "Mysterium",
+    "TotalButtons": 9,
+    "Ratio": 8
+  },
+  {
+    "MapName": "ConstructionThrill",
+    "TotalButtons": 9,
+    "Ratio": 1.25
+  },
+  {
+    "MapName": "FallEquinox",
+    "TotalButtons": 8,
+    "Ratio": 3
+  },
+  {
+    "MapName": "NorthernMill",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "ClassicCanyon",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "CrystalCaverns",
+    "TotalButtons": 8,
+    "Ratio": 7
+  },
+  {
+    "MapName": "SnowyPeaks",
+    "TotalButtons": 5,
+    "Ratio": null
+  },
+  {
+    "MapName": "DarkSci-Forest",
+    "TotalButtons": 9,
+    "Ratio": 2
+  },
+  {
+    "MapName": "GraveyardCliffside",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "WildSavannah",
+    "TotalButtons": 5,
+    "Ratio": null
+  },
+  {
+    "MapName": "SedimentaryTemple",
+    "TotalButtons": 8,
+    "Ratio": 7
+  },
+  {
+    "MapName": "Fallen(Classic)",
+    "TotalButtons": 5,
+    "Ratio": null
+  },
+  {
+    "MapName": "SunkenCitadel",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "RelicValley",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "PoisonousForest",
+    "TotalButtons": 9,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "ToxicWoods",
+    "TotalButtons": 9,
+    "Ratio": 1.25
+  },
+  {
+    "MapName": "ForlornChristmas",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "DespoticRuins",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "AbandonedFacility",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "FamiliarRuins",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "LostDesert",
+    "TotalButtons": 7,
+    "Ratio": 6
+  },
+  {
+    "MapName": "GloomyManor",
+    "TotalButtons": 10,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "SinkingShip",
+    "TotalButtons": 5,
+    "Ratio": 0.25
+  },
+  {
+    "MapName": "DarkSci-Facility",
+    "TotalButtons": 7,
+    "Ratio": 6
+  },
+  {
+    "MapName": "BeneathTheRuins",
+    "TotalButtons": 9,
+    "Ratio": 3.5
+  },
+  {
+    "MapName": "MagmaticMines",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "Fallen",
+    "TotalButtons": 10,
+    "Ratio": 2.33
+  },
+  {
+    "MapName": "SatomiSprings",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "StarryFields",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "BlueMoon",
+    "TotalButtons": 9,
+    "Ratio": 3.5
+  },
+  {
+    "MapName": "PoisonousChasm",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "SandsweptRuins",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "IgnisPeaks",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "ActiveVolcanicMines",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "DecayingSilo",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "SnowyStronghold",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "CyberpunkDistrict",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "CalamityKingdom",
+    "TotalButtons": 7,
+    "Ratio": 0.17
+  },
+  {
+    "MapName": "RusticJungle",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "Luminance",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "BathroomLeak",
+    "TotalButtons": 9,
+    "Ratio": 1.25
+  },
+  {
+    "MapName": "ShimmeringDelta",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "Archipelago",
+    "TotalButtons": 9,
+    "Ratio": 1.25
+  },
+  {
+    "MapName": "ClosingHours",
+    "TotalButtons": 6,
+    "Ratio": null
+  },
+  {
+    "MapName": "DormantVale",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "CloudySkylands",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "MysticFortress",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "IcySpires",
+    "TotalButtons": 5,
+    "Ratio": null
+  },
+  {
+    "MapName": "WintertideHaven",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "SakuraFalls",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "OutlierofaCoppiceCarcass",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "PaschaEquinox",
+    "TotalButtons": 7,
+    "Ratio": 0.75
+  },
+  {
+    "MapName": "SandstormDunes",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "MoonlightForest",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "FactoryCenter",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "FootlightLane",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "GoldenPassage",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "CadaverCreek",
+    "TotalButtons": 3,
+    "Ratio": 2
+  },
+  {
+    "MapName": "GalleryofWonders",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "SnowscapeOdyssey",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "ThunderousShoreline",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SunlitVillas",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "ElectricHeights",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "WhisperingNocturnal",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "FloodedStudio",
+    "TotalButtons": 8,
+    "Ratio": 3
+  },
+  {
+    "MapName": "NimbleValley",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "MayanRemnants",
+    "TotalButtons": 4,
+    "Ratio": null
+  },
+  {
+    "MapName": "SulphureousSea",
+    "TotalButtons": 7,
+    "Ratio": 6
+  },
+  {
+    "MapName": "BloomingLagoon",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "CursedJungle",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "AbandonedCemetery",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "SnowsweptGully",
+    "TotalButtons": 6,
+    "Ratio": null
+  },
+  {
+    "MapName": "WildSkatepark",
+    "TotalButtons": 7,
+    "Ratio": 6
+  },
+  {
+    "MapName": "UnyieldingDusk",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "AbyssalTempest",
+    "TotalButtons": 5,
+    "Ratio": 4
+  },
+  {
+    "MapName": "YearoftheFlood",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "DesertedFrontier",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "HoveringEnclaves",
+    "TotalButtons": 5,
+    "Ratio": 4
+  },
+  {
+    "MapName": "DuckyHills",
+    "TotalButtons": 9,
+    "Ratio": 0.8
+  },
+  {
+    "MapName": "HeightsIsland",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "ColouringBook",
+    "TotalButtons": 4,
+    "Ratio": null
+  },
+  {
+    "MapName": "HarvestFalls",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "GalleryofIllusion",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "FrostbiteCoastline",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SunsetFairway",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SandboxScamper",
+    "TotalButtons": 9,
+    "Ratio": 0.8
+  },
+  {
+    "MapName": "MysticalMoonsprings",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "SpectralMausoleum",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "AquaticReservoir",
+    "TotalButtons": 6,
+    "Ratio": null
+  },
+  {
+    "MapName": "JungleExploration",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "SapphireFalls",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "SteampunkClockworks",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "ClubQuarry",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "OilOutpost",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "OnamaViews",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "WindsweptValley",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "ArcticGrotto",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "AutumnFields",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "Thieve'sRefuge",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "OrbitalOverlook",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "ToyboxTrouble",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "SpringValley",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "CascadeRift",
+    "TotalButtons": 6,
+    "Ratio": 0.2
+  },
+  {
+    "MapName": "StrawberrySprings",
+    "TotalButtons": 8,
+    "Ratio": 1
+  },
+  {
+    "MapName": "LuminousReservoir",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "BorealIsle",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SurrealScene",
+    "TotalButtons": 1,
+    "Ratio": 0
+  },
+  {
+    "MapName": "IntersticeMindscape",
+    "TotalButtons": 2,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SnowyFrost",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "TheFuryofBoreas",
+    "TotalButtons": 5,
+    "Ratio": 4
+  },
+  {
+    "MapName": "MarigoldMeadows",
+    "TotalButtons": 3,
+    "Ratio": null
+  },
+  {
+    "MapName": "OceanicOdyssey",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "StarManor",
+    "TotalButtons": 7,
+    "Ratio": null
+  },
+  {
+    "MapName": "TrenchedSonarStation",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "Summit",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "AmphibiousBillow",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "SkyworkFalls",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "SinisterLabyrinth",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "UnderworldGrove",
+    "TotalButtons": 7,
+    "Ratio": 0.75
+  },
+  {
+    "MapName": "MossyShrine",
+    "TotalButtons": 8,
+    "Ratio": 3
+  },
+  {
+    "MapName": "TwilightAthenaeum",
+    "TotalButtons": 7,
+    "Ratio": 0.17
+  },
+  {
+    "MapName": "RunicMaze",
+    "TotalButtons": 7,
+    "Ratio": 0.75
+  },
+  {
+    "MapName": "IrradiatingAlpines",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SteamPalaces",
+    "TotalButtons": 8,
+    "Ratio": 1
+  },
+  {
+    "MapName": "HallowedVestige",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "KozuiPeak",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "LilacValley",
+    "TotalButtons": 9,
+    "Ratio": 1.25
+  },
+  {
+    "MapName": "WastelandJunction",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "FrozenSettlement",
+    "TotalButtons": 8,
+    "Ratio": 0.6
+  },
+  {
+    "MapName": "StarstruckPalace",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SanguineousLuna",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "TheJudgementofHephaestus",
+    "TotalButtons": 4,
+    "Ratio": null
+  },
+  {
+    "MapName": "EerieSpires",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "GlacialWarfare",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "InsularSolstice",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "BeepBlockStation",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "DreamscapeSkylines",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "CrypticCascade",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "SulphuricDepths",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "MarsStations",
+    "TotalButtons": 8,
+    "Ratio": 0.6
+  },
+  {
+    "MapName": "UnderseaFacility",
+    "TotalButtons": 14,
+    "Ratio": 1.8
+  },
+  {
+    "MapName": "VirulentJunkyard",
+    "TotalButtons": 7,
+    "Ratio": 0.4
+  },
+  {
+    "MapName": "ChaozJapan",
+    "TotalButtons": 5,
+    "Ratio": null
+  },
+  {
+    "MapName": "SubmergingCoastland",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "SpiderDungeon",
+    "TotalButtons": 8,
+    "Ratio": 3
+  },
+  {
+    "MapName": "DesolateDomain",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "NightmareCastle",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "EndOfTheLine",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "Lighthouse",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "CasinoOfEnvy",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "MirageSaloon",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "UnderworldCastle",
+    "TotalButtons": 8,
+    "Ratio": 1
+  },
+  {
+    "MapName": "AbyssalRemnants",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "DusklandEnigma",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "ConcreteJungle",
+    "TotalButtons": 7,
+    "Ratio": 2.5
+  },
+  {
+    "MapName": "ForestFacility",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "SpectralHideaway",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "SmolderingFracturedRealm",
+    "TotalButtons": 4,
+    "Ratio": 3
+  },
+  {
+    "MapName": "TheMalfunctionofTime",
+    "TotalButtons": 3,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "Pursuit",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "LiminalFruticore",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "Firewatch",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "TwilightPark",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "PitfallTemple",
+    "TotalButtons": 3,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "AbandonedJunkyard",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "Sub-Zerosphere",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "AbandonedHarbour",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "CentralMassArray",
+    "TotalButtons": 4,
+    "Ratio": 1
+  },
+  {
+    "MapName": "LostCityofGold",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "WhirlwindWasteland",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "MindsOfMisery",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "DistortedIgnisDimension",
+    "TotalButtons": 8,
+    "Ratio": 1
+  },
+  {
+    "MapName": "VenomousVistas",
+    "TotalButtons": 6,
+    "Ratio": null
+  },
+  {
+    "MapName": "SplendidChinaWall",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "GrumblingMineshafts",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "ForsakenFoundry",
+    "TotalButtons": 7,
+    "Ratio": 1.33
+  },
+  {
+    "MapName": "HauntedChapel",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "SoulstormHorizon",
+    "TotalButtons": 6,
+    "Ratio": 5
+  },
+  {
+    "MapName": "AutumnHideaway",
+    "TotalButtons": 7,
+    "Ratio": null
+  },
+  {
+    "MapName": "CrawlingCaverns",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  },
+  {
+    "MapName": "HanamiHighlands",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "EnvisionedOrder",
+    "TotalButtons": 7,
+    "Ratio": null
+  },
+  {
+    "MapName": "DesertedDistrict",
+    "TotalButtons": 5,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "DesertRuins",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "SugarySprings",
+    "TotalButtons": 4,
+    "Ratio": null
+  },
+  {
+    "MapName": "HeightIsland",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "Baseplate",
+    "TotalButtons": 1,
+    "Ratio": 0
+  },
+  {
+    "MapName": "FloodGame",
+    "TotalButtons": 0,
+    "Ratio": null
+  },
+  {
+    "MapName": "FabricThrill",
+    "TotalButtons": 10,
+    "Ratio": 1.5
+  },
+  {
+    "MapName": "CloggedToilet🚽👍",
+    "TotalButtons": 8,
+    "Ratio": 1.67
+  },
+  {
+    "MapName": "CaveSystem(Classic)",
+    "TotalButtons": 7,
+    "Ratio": null
+  },
+  {
+    "MapName": "MaltarisValley",
+    "TotalButtons": 6,
+    "Ratio": null
+  },
+  {
+    "MapName": "SkyworkArmada",
+    "TotalButtons": 9,
+    "Ratio": 2
+  },
+  {
+    "MapName": "ShroomhavenTemple",
+    "TotalButtons": 6,
+    "Ratio": 1
+  },
+  {
+    "MapName": "EyeoftheStorm",
+    "TotalButtons": 6,
+    "Ratio": 2
+  },
+  {
+    "MapName": "NuclearBlizzard",
+    "TotalButtons": 10,
+    "Ratio": 1
+  },
+  {
+    "MapName": "DisgonbeEZ",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "NewThing",
+    "TotalButtons": 1,
+    "Ratio": null
+  },
+  {
+    "MapName": "TestMap",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "Scientific",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "HallwaysofDeath",
+    "TotalButtons": 3,
+    "Ratio": null
+  },
+  {
+    "MapName": "UnnamedUnderwaterMap",
+    "TotalButtons": 1,
+    "Ratio": null
+  },
+  {
+    "MapName": "HumbleJungle",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "PurpleSector",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "UnnamedHalloweenMap",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "BetweenRealms",
+    "TotalButtons": 5,
+    "Ratio": 0.67
+  },
+  {
+    "MapName": "NoLight",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "UnnamedCaveMap",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "SpaceIdea",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "Disaster",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "UnnamedLineMap",
+    "TotalButtons": "N/A",
+    "Ratio": null
+  },
+  {
+    "MapName": "AAAAAAAA",
+    "TotalButtons": 1,
+    "Ratio": null
+  },
+  {
+    "MapName": "MapMakingKit",
+    "TotalButtons": 5,
+    "Ratio": 4
+  },
+  {
+    "MapName": "DevMap",
+    "TotalButtons": 3,
+    "Ratio": 2
+  },
+  {
+    "MapName": "TimelineTest",
+    "TotalButtons": 6,
+    "Ratio": 0.5
+  }
+]
